@@ -1,0 +1,20 @@
+extend componentes/plantilla.pug
+block contenidos
+		main.contenedor--home
+			+caja--con-fondo-grande ('cyberpunk-2077.jpg', "Destacadas", 'Cyberpunk 2077 tiene tres prólogos distintos', 'En Cyberpunk 2077 los jugadores podrán seleccionar entre tres historias de origen diferentes, cada una presentando una ubicación de partida distinta para su personaje.')
+			+caja--con-fondo-pequena ('caja-ring','ring.jpg', "Cine y TV", 'Las más taquilleras de la historia')
+			.banner--homepage
+				h3 'Devs': la primera serie de Alex Garland es una hipnótica pieza de ciencia ficción.
+				p Es ligeramente difícil definir 'Devs', la serie creada, escrita y dirigida por Alex Garland. Una propuesta que gustará a unos y será odiada por otros
+				a.button Leer mas
+			+caja--con-fondo-pequena ('caja-ff','covid.jpg', "Historias", 'Un estadounidense que regresó de China tras el coronavirus debe pagar miles de dólares por hacerse una prueba de la gripe')
+			+caja--con-fondo-pequena ('caja-xbox','meteorito.jpg', "Espacio", 'Hallan indicios de una proteína de origen extraterrestre en un meteorito hallado en Argelia')
+			+caja--con-fondo-pequena ('caja-fortnite','gato.jpg', "Ciencia", '¿Realmente entiendes a tu gato? Completa este test para ponerte a prueba')
+			+caja--con-fondo-mediana ('caja-zelda','ataaque-ddos.jpg', "Internet", 'Los ataques DDoS son considerados como la Mayor Amenaza para las Empresas')
+			.sidebar--listado
+				h3 Noticias Destacadas
+				ul
+					+listado-categoria('1','Esta mujer está llenando su ciudad con rampas para sillas de ruedas hechas de Lego')
+					+listado-categoria('2','Tesla "incrementa" la autonomía del Model S y Model X con una nueva actualización de software')
+					+listado-categoria('3','Amazon elimina más de un millón de productos que se aprovechaban de la crisis del coronavirus')
+	
